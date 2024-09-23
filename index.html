@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Portfolio</div>
+        <ul class="ul">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section id="about" class="about">
+        
+        <div class="about-content">
+          <img
+            src="hello.jpg"
+            alt="Your Photo"
+            class="profile-photo"
+          />
+          <div class="introduction">
+            <p>
+            <h1>About Me</h1>
+              Hello! I'm Pedrito M. Parrilla III, a third-year IT student at EVSU Ormoc. ,I specialize web
+              development . I'm passionate about technology and constantly
+              learning new skills to enhance my capabilities in IT.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <h1>Projects</h1>
+      
+        <div class="slider">
+          <div class="slides">
+
+            <div class="slide"> 
+              <h2>Project 1: Python Tkinter</h2>
+              <p>Kiosk for Bread and Pastry Coffe shopo.</p>
+              <img class="img" src="Bread.png" alt="Python Project" />
+            </div>
+
+            <div class="slide">
+              <h2>Project 2: Web Development</h2>
+              <p>API website using HTML, CSS, and JavaScript.</p>
+              <img src="API_2nd.png" alt="Web Development" />
+            </div>
+
+            <div class="slide">  
+              <h2>Project 3: BMI Calculator</h2>
+              <p>Designed and Calculate the BMI Using HTML CSS and JavaScript.</p>
+              <img src="BMI.png" alt="Web Development" />
+            </div>
+
+            <div class="slide">  
+              <h2>Project 4: Simple Login</h2>
+              <p>Designed User Login to acces the API  Using HTML CSS and JavaScript.</p>
+              <img src="login.png" alt="Web Development" />
+            </div>
+          </div>
+          </div>
+          
+
+      
+
+          <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
+          <button class="next" onclick="moveSlides(1)">&#10095;</button>
+        </div>
+      </section>
+      
+
+      <section id="contact" class="contact">
+        <h1>Contact Me</h1>
+        <div class="contact-container">
+
+          <div class="contact-card">
+            <a href="https://www.facebook.com/pedrito.parrilla05" target="_blank">
+              <img src="fbb.png" alt="Facebook" class="contact-icon" />
+              <p>Facebook</p>
+            </a>
+          </div>
+
+          <div class="contact-card">
+            <a href="https://www.linkedin.com/in/pedrito-parrilla-688b412ba/" target="_blank">
+              <img src="linn.png" alt="LinkedIn" class="contact-icon" />
+              <p>LinkedIn</p>
+            </a>
+          </div>
+
+          <div class="contact-card">
+            <a href="https://github.com/Pedz0525" target="_blank">
+              <img src="git.png" alt="GitHub" class="contact-icon" />
+              <p>GitHub</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 Parrilla. No Copyright.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
