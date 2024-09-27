@@ -62,6 +62,8 @@ h1 {
   align-items: center;
   gap: 50px;
   flex-wrap: wrap;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .profile-photo {
@@ -93,11 +95,13 @@ h1 {
   position: relative;
   max-width: 80%;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .slides {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 2s ease-in-out;
 }
 
 .slide {
@@ -196,6 +200,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
+  background-color: #181c14;
 }
 
 nav ul {
@@ -211,6 +216,14 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: white;
+  font-size: 1.5rem;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
 }
 
 footer {
@@ -263,3 +276,31 @@ footer {
     max-width: 250px;
   }
 }
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #181c14;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+}
+
